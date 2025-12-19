@@ -15,7 +15,7 @@ composer install --optimize-autoloader
 cp .env.example .env || true
 php artisan key:generate
 
-sed -i 's/DB_HOST=127.0.0.1/DB_HOST=172.18.0.3/g' .env
+sed -i 's/DB_HOST=127.0.0.1/DB_HOST=172.17.0.3/g' .env
 sed -i 's/DB_PASSWORD=/DB_PASSWORD=password/g' .env
 
 php artisan migrate --force
