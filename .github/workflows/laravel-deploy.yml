@@ -3,7 +3,7 @@ run-name: Build, Push and Deploy image simple social media
 on:
   push:
     branches:
-      - main
+      - testing
 env:
   IMAGE_NAME: "${{ secrets.DOCKER_USER }}/iqbal51-simple-social-media"
   DOCKER_USER: "${{ secrets.DOCKER_USER }}"
